@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <form name="formulario" onsubmit="return valida();">
+        <p>busca </p>
+        <input type="text" name="busca">
+        <input type="submit">
+    </form>
+    <script>
+        function valida() {
+            if (document.formulario.busca.value == ``){
+                alert("preencha o campo corretamente");
+                document.formulario.busca.focus();
+                return false;
+            }
+            if(document.formulario.busca.value.length < 3 ){
+                alert("informe pelomenos 3 letras")
+                document.formulario.busca.focus();
+                return false;
+            }
+            return true;
+        }
+        
+    </script>
+</body>
+</html>

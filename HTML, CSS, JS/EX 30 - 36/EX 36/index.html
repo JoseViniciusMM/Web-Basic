@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário</title>
+        <script type="text/javascript">
+            function somarValores(){
+                var form = document.forms['calculo'];
+                var numero1 = parseFloat(form.numero1.value);
+                var numero2 = parseFloat(form.numero2.value);
+                var soma = numero1 + numero2;
+                document.getElementById('resultado').innerHTML = soma;
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="calculo">
+            <p>
+                <label>Numero:</label>
+                <input type= text name="numero1">
+            </p>
+            <p>
+                <label>Numero:</label>
+                <input type= text name="numero2">
+            </p>
+            <input type=button onclick="somarValores()" value="Somar">
+        </form>
+        <h2 id="resultado"></h2>
+    </body>
+</html>

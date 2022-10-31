@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastramento</title>
+</head>
+    <script src="scripts/cadastrar.js"></script>
+
+<body>
+        <form name="formulario" action="dados_cadastro.php" method="post">
+            <h1>Cadastramento</h1>
+            <p>
+                    Email: <input type="text" placeholder="Informe seu Email" name="email"/>
+            </p>
+            <p>
+                    Senha: <input type="text" name="senha" placeholder="Digite sua senha:"/>
+            </p>
+            <input type="button" value="Acessar" onclick="validaLog(email, senha)">
+            <a href="cadastro.html"><input type="button" value="Quero me Cadastrar!"></a>
+    </form>
+</body>
+</html>
